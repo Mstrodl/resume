@@ -123,7 +123,7 @@
 
 \newcommand{\makesidebarheader}{
     {\large\bfseries\color{accent}\@tagline\par}
-    \cvsection{Contact}
+    \medskip
     {\footnotesize\bfseries\@personalinfo\par}
 }
 
