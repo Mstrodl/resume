@@ -101,8 +101,7 @@
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
     {\Huge\bfseries\color{ace}\MakeUppercase{\@name}\par}
-    \medskip
-    {\large\bfseries\color{accent}\@tagline\par}
+    \vspace{4.7px}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
     \begin{minipage}{\@photodiameter}
@@ -115,18 +114,20 @@
   \endgroup
 }
 
-\newcommand{\makesidebarheader}{
-    {\footnotesize\bfseries\@personalinfo\par}
-}
-
-\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
-
 \newcommand{\cvsection}[2][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 }
+
+\newcommand{\makesidebarheader}{
+    {\large\bfseries\color{accent}\@tagline\par}
+    \cvsection{Contact}
+    {\footnotesize\bfseries\@personalinfo\par}
+}
+
+\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
 
 \newcommand{\cvsubsection}[1]{%
   \smallskip%
