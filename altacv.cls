@@ -44,6 +44,8 @@
 \colorlet{heading}{black}
 \colorlet{emphasis}{black}
 \colorlet{body}{black!80!white}
+\definecolor{AcePurple}{HTML}{800080}
+\colorlet{ace}{AcePurple}%Sepia}
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
 
@@ -98,7 +100,7 @@
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
+    {\Huge\bfseries\color{ace}\MakeUppercase{\@name}\par}
     \medskip
     {\large\bfseries\color{accent}\@tagline\par}
     \ifdef{\@photodiameter}{%
