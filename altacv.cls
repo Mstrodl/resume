@@ -87,7 +87,7 @@
 \newcommand{\phone}[1]{\printinfo{\phonesymbol}{\href{tel:+14258983145}{#1}}}
 \newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\href{https://#1}{#1}}}
 \newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
-\newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{#1}}
+\newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{\href{https://#1}{#1}}}
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{\href{https://github.com/#1}{#1}}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
@@ -99,10 +99,8 @@
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
     {\Huge\bfseries\MakeUppercase{\@name}\par}
-%    \medskip
-%    {\large\bfseries\color{accent}\@tagline\par}
-%    \medskip
-%    {\footnotesize\bfseries\@personalinfo\par}
+    \medskip
+    {\large\bfseries\color{accent}\@tagline\par}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
     \begin{minipage}{\@photodiameter}
@@ -112,12 +110,10 @@
       \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
     \fi%
     \end{minipage}\par}{}%
-  \endgroup\medskip
+  \endgroup
 }
 
 \newcommand{\makesidebarheader}{
-    {\large\bfseries\color{accent}\@tagline\par}
-    \medskip
     {\footnotesize\bfseries\@personalinfo\par}
 }
 
