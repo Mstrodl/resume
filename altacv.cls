@@ -84,7 +84,7 @@
 \newcommand{\photo}[2]{\def\@photo{#2}\def\@photodiameter{#1}}
 \newcommand{\email}[1]{\printinfo{\emailsymbol}{\href{mailto:#1}{#1}}}
 \newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{#1}}
-\newcommand{\phone}[1]{\printinfo{\phonesymbol}{\href{tel:+14109915479}{#1}}}
+\newcommand{\phone}[1]{\printinfo{\phonesymbol}{\href{tel:+14258983145}{#1}}}
 \newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\href{https://#1}{#1}}}
 \newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{#1}}
