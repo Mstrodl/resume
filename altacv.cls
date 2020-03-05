@@ -69,7 +69,7 @@
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
   {\end{adjustwidth}}
 
-\newcommand{\emailsymbol}{\faAt}
+\newcommand{\emailsymbol}{\faEnvelope}
 \newcommand{\phonesymbol}{\faPhone}
 \newcommand{\homepagesymbol}{\faChain}
 \newcommand{\locationsymbol}{\faMapMarker}
@@ -146,6 +146,14 @@
   \smallskip
   \ifstrequal{#3}{}{}{\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
   \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+  \medskip
+}
+\newcommand{\cvsubevent}[3]{%
+  \smallskip
+  \textbf{\color{accent}#1}\par
+  \smallskip
+  \ifstrequal{#2}{}{}{\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#2}%
+  \ifstrequal{#3}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#3}}\par}
   \medskip
 }
 
