@@ -100,7 +100,7 @@
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
-    {\Huge\bfseries\color{ace}\MakeUppercase{\@name}\par}
+    {\fontsize{36}{40}\bfseries\color{ace}\MakeUppercase{\@name}\par}
     \vspace{4.7px}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
