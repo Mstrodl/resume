@@ -2,7 +2,6 @@ default: all clean
 
 all: resume.tex sidebar.tex
 	pdflatex -jobname Resume resume.tex
-	cp -v Resume.pdf /data/nginx/galenguyer.com/build/Resume-future.pdf
 
 clean:
 	rm -f *.aux
