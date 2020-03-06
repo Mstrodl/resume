@@ -19,5 +19,5 @@ purge: clean
 	git clean -fX
 
 publish:
-	latexmk resume.tex -pdf -jobname=Galen_Guyer_Resume-`date +"%F"`
+	latexmk resume.tex -pdf -jobname=Galen_Guyer_Resume-`date +"%F_%H-%M-%S"`
 	make clean
