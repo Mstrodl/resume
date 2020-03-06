@@ -5,17 +5,20 @@ all: resume.tex sidebar.tex
 	cp -v Resume.pdf /data/nginx/galenguyer.com/build/Resume-future.pdf
 
 clean:
-	rm -rf Resume.aux
-	rm -rf Resume.bcf
-	rm -rf Resume.dvi
-	rm -rf Resume.log
-	rm -rf Resume.out
-	rm -rf Resume.run.xml
-	rm -rf q.log
+	rm -f *.aux
+	rm -f *.bbl
+	rm -f *.bcf
+	rm -f *.blg
+	rm -f *.fdb_latexmk
+	rm -f *.fls
+	rm -f *.log
+	rm -f *.out
+	rm -f *.run.xml
 
 purge: clean
 	rm -rf Resume.pdf
 	git clean -fX
 
-publish: default
-	cp Resume.pdf Galen_Guyer_Resume-`date +"%m_%d_%Y"`.pdf
+publish:
+	latexmk resume.tex -pdf -jobname=Galen_Guyer_Resume-`date +"%F"`
+	make clean
