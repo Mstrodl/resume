@@ -73,7 +73,7 @@
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{galenguyer@outlook.com}\\\smallskip
+  \email{galen@galenguyer.com}\\\smallskip
   \phone{(425) 898-3145}\\\smallskip
   \homepage{galenguyer.com}\\\smallskip
   \linkedin{in/galenguyer}\\\smallskip
@@ -121,30 +121,30 @@
 \begin{itemize}
 \item Built a Discord bot to provide moderation tools and fun commands to over 30 servers totaling over 12,000 users
 \item Used C\# to connect to Discord's API and store all user data in an encrypted, self-hosted MongoDB instance
-\item Exposed user-stored quotes via a webpage with an ASP.NET API and Vue frontend for responsive search
+\item Exposed user-stored quotes via a webpage ASP.NET Razor Pages for server-side rendering and JavaScript for fast, responsive search
 \end{itemize}
-\textit{\textbf{Tools:} C\#, MongoDB, ASP.NET, HTML, Vue, Azure Build Pipelines}
+\textit{\textbf{Tools:} C\#, MongoDB, ASP.NET, Razor Pages, HTML/CSS/JS, Azure Build Pipelines}
 
 \divider
 
-\project{PhotoSink}{https://github.com/galenguyer/PhotoSink}
-\begin{itemize}
-\item Re-wrote the lightweight photo gallery PhotoFloat, using modern technologies
-\item Used a python3 backend to construct the directory indexes and resize images into thumbnails for faster page loads
-\item Built a React app that requests the indexes and displays the gallery with thumbnails and folder names
-\item Used the url fragment for single page navigation so the full page doesn't need to be reloaded on navigation
-\end{itemize}
-\textit{\textbf{Tools:} Python, React, NGINX}
+%\project{PhotoSink}{https://github.com/galenguyer/PhotoSink}
+%\begin{itemize}
+%\item Re-wrote the lightweight photo gallery PhotoFloat, using modern technologies
+%\item Used a python3 backend to construct the directory indexes and resize images into thumbnails for faster page loads
+%\item Built a React app that requests the indexes and displays the gallery with thumbnails and folder names
+%\item Used the url fragment for single page navigation so the full page doesn't need to be reloaded on navigation
+%\end{itemize}
+%\textit{\textbf{Tools:} Python, React, NGINX}
 
 %\divider
 
-%\noghproject{Worldwide CDN}{https://gallery.mastrchef.rocks}
-%\begin{itemize}
-%\item Consists of four Azure Virtual Machines distributed around the globe to provide the fastest server to the user based on geographical location
-%\item Uses inotifywait and rsync to distribute updated files from central server to all edge servers automatically
-%\item Serves an attractive, lightweight photo gallery with nginx and PhotoFloat
-%\end{itemize}
-%\textit{\textbf{Tools:} Azure Virtual Machines, Azure Traffic Managers, Bash, Nginx}
+\noghproject{Worldwide CDN}{https://galenguyer.com}
+\begin{itemize}
+\item Consists of seven Azure Virtual Machines distributed around the globe to provide the fastest server to the user based on geographical location
+\item Uses shell scripts and rsync to distribute static files, configuration files, and SSL certificates from a central server to all edge servers
+\item Averages sub-100ms latency around the globe for my personal website and CDN
+\end{itemize}
+\textit{\textbf{Tools:} Azure Virtual Machines, Azure Traffic Managers, Bash, Nginx}
 
 \clearpage
 

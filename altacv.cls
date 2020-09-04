@@ -267,3 +267,4 @@
 
 
 \newcommand{\project}[2]{\cvevent{#1}{\href{#2}{\githubsymbol\hspace{1ex}#2}}{}{}}
+\newcommand{\noghproject}[2]{\cvevent{#1}{\href{#2}{\homepagesymbol\hspace{1ex}#2}}{}{}}
