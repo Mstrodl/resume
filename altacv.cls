@@ -102,6 +102,7 @@
     \raggedright\color{emphasis}%
     {\fontsize{36}{40}\bfseries\color{ace}\MakeUppercase{\@name}\par}
     \vspace{4.7px}
+    {\large\bfseries\color{accent}\@tagline\par}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
     \begin{minipage}{\@photodiameter}
@@ -122,8 +123,6 @@
 }
 
 \newcommand{\makesidebarheader}{
-    {\large\bfseries\color{accent}\@tagline\par}
-    \medskip
     {\footnotesize\bfseries\@personalinfo\par}
 }
 
