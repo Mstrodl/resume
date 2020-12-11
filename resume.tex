@@ -133,14 +133,24 @@
 \divider
 \smallskip
 
-\project{PhotoSink}{https://github.com/galenguyer/PhotoSink}
+%\project{RIT COVID-19 Dashboard}{https://github.com/galenguyer/rit-covid-dashboard}
+\noghproject{RIT COVID-19 Dashboard}{https://ritcoviddashboard.com}
 \begin{itemize}
-\item Re-wrote the lightweight photo gallery PhotoFloat, using modern technologies
-\item Used a python3 backend to construct the directory indexes and resize images into thumbnails for faster page loads
-\item Built a React app that requests the indexes and displays the gallery with thumbnails and folder names
-\item Used the url fragment for single page navigation so the full page doesn't need to be reloaded on navigation
+\item Created an improved version of the Rochester Institute of Technology's COVID-19 tracking dashboard
+\item Wrote a Python scraper to check the dashboard on an interval and update a SQLite database with the numbers from the official dashboard, then expose the saved data with a JSON API
+\item Used the data from the scraper in a React app that provides all the information from the official dashboard as well as changes over a user-selected time period and graphs of all historical data
+\item Used by roughly 10\% of the student body within 24 hours of launch
 \end{itemize}
-\textit{\textbf{Tools:} Python, React, NGINX}
+\textit{\textbf{Tools:} Python, SQLite, Flask, React, Docker}
+
+%\project{PhotoSink}{https://github.com/galenguyer/PhotoSink}
+%\begin{itemize}
+%\item Re-wrote the lightweight photo gallery PhotoFloat, using modern technologies
+%\item Used a python3 backend to construct the directory indexes and resize images into thumbnails for faster page loads
+%\item Built a React app that requests the indexes and displays the gallery with thumbnails and folder names
+%\item Used the url fragment for single page navigation so the full page doesn't need to be reloaded on navigation
+%\end{itemize}
+%\textit{\textbf{Tools:} Python, React, NGINX}
 
 %\divider
 
