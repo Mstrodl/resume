@@ -121,17 +121,17 @@
 
 \cvsection{Projects}
 
-\project{GenericBot}{https://github.com/galenguyer/GenericBot}
-\begin{itemize}
-\item Built a Discord bot to provide moderation tools and fun commands to over 50 servers totaling over 16,000 users
-\item Used C\# to connect to Discord's API and store all user data in an encrypted, self-hosted MongoDB instance
-\item Exposed user-stored quotes via a webpage ASP.NET Razor Pages for server-side rendering and JavaScript for fast, responsive search
-\end{itemize}
-\textit{\textbf{Tools:} C\#, MongoDB, ASP.NET, Razor Pages, HTML/CSS/JS, Azure Build Pipelines}
+%\project{GenericBot}{https://github.com/galenguyer/GenericBot}
+%\begin{itemize}
+%\item Built a Discord bot to provide moderation tools and fun commands to over 50 servers totaling over 16,000 users
+%\item Used C\# to connect to Discord's API and store all user data in an encrypted, self-hosted MongoDB instance
+%\item Exposed user-stored quotes via a webpage ASP.NET Razor Pages for server-side rendering and JavaScript for fast, responsive search
+%\end{itemize}
+%\textit{\textbf{Tools:} C\#, MongoDB, ASP.NET, Razor Pages, HTML/CSS/JS, Azure Build Pipelines}
 
-\smallskip
-\divider
-\smallskip
+%\smallskip
+%\divider
+%\smallskip
 
 %\project{RIT COVID-19 Dashboard}{https://github.com/galenguyer/rit-covid-dashboard}
 \noghproject{RIT COVID-19 Dashboard}{https://ritcoviddashboard.com}
@@ -152,15 +152,17 @@
 %\end{itemize}
 %\textit{\textbf{Tools:} Python, React, NGINX}
 
-%\divider
+\smallskip
+\divider
+\smallskip
 
-%\noghproject{Global Content Delivery Network}{https://galenguyer.com}
-%\begin{itemize}
-%\item Consists of seven Azure Virtual Machines distributed around the globe to provide the least latency based on the user's geographical location
-%\item Uses shell scripts and rsync to distribute static files, configuration files, and SSL certificates from a central server to all edge servers
-%\item Averages sub-100ms latency around the globe for my personal website and CDN, beating Cloudflare's speeds for a cache miss and being comparable for cache hits
-%\end{itemize}
-%\textit{\textbf{Tools:} Azure Virtual Machines, Azure Traffic Managers, Bash, Nginx}
+\project{Global Content Delivery Network}{https://github.com/galenguyer/cdn-configs}
+\begin{itemize}
+\item Consists of Azure Virtual Machines distributed around the globe to provide the least latency based on the user's geographical location
+\item Deploys with Terraform for easily reproducible infrastructure 
+\item Uses Ansible to distribute static files, configuration files, and SSL certificates from a central server to all edge servers
+\end{itemize}
+\textit{\textbf{Tools:} Azure Virtual Machines, Azure Traffic Managers, Ansible, Terraform, Nginx}
 
 \clearpage
 
