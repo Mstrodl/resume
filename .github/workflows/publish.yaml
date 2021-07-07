@@ -15,7 +15,7 @@ jobs:
 
       - name: Get current time
         id: time
-        run: echo "::set-output name=time::$(date +%F %H:%M)"
+        run: echo "::set-output name=time::$(date +'%F %H:%M')"
 
       - name: Set up Git repository
         uses: actions/checkout@v2
@@ -31,10 +31,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.time.outputs.time }}
+          tag_name: ${{ steps.date.outputs.date }}
           release_name: ${{ steps.time.outputs.time }}
           draft: false
-          prerelease: true
+          prerelease: false
 
       - name: Upload Release Asset
         id: upload-release-asset 
