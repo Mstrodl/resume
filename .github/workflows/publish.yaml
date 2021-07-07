@@ -11,7 +11,11 @@ jobs:
     steps:
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%F_%H-%M') name=time::$(date +%F %H:%M)"
+        run: echo "::set-output name=date::$(date +'%F_%H-%M')"
+
+      - name: Get current time
+        id: time
+        run: echo "::set-output name=time::$(date +%F %H:%M)"
 
       - name: Set up Git repository
         uses: actions/checkout@v2
@@ -27,8 +31,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.date.outputs.date }}
-          release_name: ${{ steps.date.outputs.time }}
+          tag_name: ${{ steps.time.outputs.time }}
+          release_name: ${{ steps.time.outputs.time }}
           draft: false
           prerelease: true
 
