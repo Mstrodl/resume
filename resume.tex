@@ -95,6 +95,16 @@
 
 \cvsection{Experience}
 
+\cvevent{Blackbaud}{DevOps Intern}{May 2021 -- August 2021}{Remote}
+\begin{itemize}
+  \item Did some things for DevOps
+  \item Probably did a lot of things for devops, it was the job after all
+  \item DevOps is fun and my hoby, let's do all the Developer Operations, whee!
+\end{itemize}
+\textit{\textbf{Tools:} PowerShell, Azure, That One Old Thing}
+
+\divider
+
 \cvevent{Microsoft}{Software Engineering Intern - One Customer Voice Team}{June 2019 -- August 2019}{Redmond, WA}
 \begin{itemize}
 \item Improved item grouping for the internal feedback aggregation tool
@@ -104,11 +114,7 @@
 \end{itemize}
 \textit{\textbf{Tools:} C\#, ASP.NET, Azure Service Fabric, ElasticSearch, AngularJS}
 
-\smallskip
-\divider
-\smallskip
-
-\cvevent{Microsoft}{Software Engineering Intern - Office Security Penetration Testing Team}{June 2018 -- August 2018}{Redmond, WA}
+\cvsubevent{Software Engineering Intern - Office Security Penetration Testing Team}{June 2018 -- August 2018}{Redmond, WA}
 \begin{itemize}
 \item Automated resource gathering, provisioning, and deployment of fuzzing jobs
 \item Developed a PowerShell script to create a Windows VM, automatically install Office, gather debugging symbols for Office, and send these to a Microsoft \\ Security Risk Detection server to install and start a fuzzing run
@@ -117,7 +123,7 @@
 \end{itemize}
 \textit{\textbf{Tools:} PowerShell, Microsoft Security Risk Detection, Azure, ASP.NET}
 
-\medskip 
+\smallskip 
 
 \cvsection{Projects}
 
@@ -129,15 +135,12 @@
 %\end{itemize}
 %\textit{\textbf{Tools:} C\#, MongoDB, ASP.NET, Razor Pages, HTML/CSS/JS, Azure Build Pipelines}
 
-%\smallskip
 %\divider
-%\smallskip
 
 %\project{RIT COVID-19 Dashboard}{https://github.com/galenguyer/rit-covid-dashboard}
 \noghproject{RIT COVID-19 Dashboard}{https://ritcoviddashboard.com}
 \begin{itemize}
-\item Created an improved version of the Rochester Institute of Technology's COVID-19 tracking dashboard
-\item Wrote a Python scraper to check the dashboard on an interval and update a SQLite database with the numbers from the official dashboard, then expose the saved data with a JSON API
+\item Wrote a Python scraper to check the official dashboard on an interval and update a SQLite database with the numbers from the official dashboard, then expose the saved data with a JSON API
 \item Used the data from the scraper in a React app that provides all the information from the official dashboard as well as changes over a user-selected time period and graphs of all historical data
 \item Used by roughly 10\% of the student body within 24 hours of launch
 \end{itemize}
@@ -152,17 +155,15 @@
 %\end{itemize}
 %\textit{\textbf{Tools:} Python, React, NGINX}
 
-\smallskip
 \divider
-\smallskip
 
-\project{Global Content Delivery Network}{https://github.com/galenguyer/cdn-configs}
+\noghproject{Global Content Delivery Network}{https://galenguyer.com}
 \begin{itemize}
 \item Consists of Azure Virtual Machines distributed around the globe to provide the least latency based on the user's geographical location
-\item Deploys with Terraform for easily reproducible infrastructure 
+\item Deploys with Terraform for easily reproducible infrastructure
 \item Uses Ansible to distribute static files, configuration files, and SSL certificates from a central server to all edge servers
 \end{itemize}
-\textit{\textbf{Tools:} Azure Virtual Machines, Azure Traffic Managers, Ansible, Terraform, Nginx}
+\textit{\textbf{Tools:} Azure Virtual Machines, Azure Traffic Managers, Bash, Nginx}
 
 \clearpage
 
