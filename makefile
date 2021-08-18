@@ -13,6 +13,8 @@ clean:
 	rm -f *.log
 	rm -f *.out
 	rm -f *.run.xml
+	rm -f *.synctex.gz
+	rm -f resume.pdf
 
 purge: clean
 	rm -rf Resume.pdf
