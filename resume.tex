@@ -52,8 +52,8 @@
 
 % Change the colours if you want to
 \definecolor{AccentGreen}{HTML}{339966}
-\definecolor{AcePurple}{HTML}{800080}
-\definecolor{DarkerPurple}{HTML}{5b005b}
+\definecolor{AcePurple}{HTML}{9429a0}
+\definecolor{DarkerPurple}{HTML}{6e1f77}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{SomeBlue}{HTML}{4286f4}
@@ -68,16 +68,16 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 \begin{document}
-\name{Galen Guyer}
-\tagline{Software Engineer Seeking a Spring or Summer 2022 Co-op}
+\name{Mary Strodl}
+\tagline{Computer Scientist Seeking a Summer 2022 Co-op}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{galen@galenguyer.com}\\\smallskip
-  \phone{(425) 898-3145}\\\smallskip
-  \homepage{galenguyer.com}\\\smallskip
-  \github{github.com/galenguyer}\\\smallskip
-  \linkedin{in/galenguyer}\\\smallskip
+  \github{github.com/mstrodl}\\\smallskip
+  \email{mary@mstrodl.com}\\\smallskip
+  \phone{(516) 654-5123}\\\smallskip
+  \homepage{mstrodl.com}\\\smallskip
+  \linkedin{in/mstrodl}\\\smallskip
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -93,74 +93,63 @@
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
 
-\cvsection{Experience}
+\cvsection{Projects}
 
-\cvevent{Blackbaud}{DevOps Intern}{May 2021 -- August 2021}{Remote}
+\project{ColecoVision Emulator}{https://github.com/mstrodl/pen}
 \begin{itemize}
-  \item Worked with the Splunk API to automate creation and updating of alerts from version-controlled files
-  \item Designed sane defaults to be loaded by a script to ease creation and updating of alerts in bulk
+\item Wrote a Z80 (ColecoVision CPU) emulator in TypeScript, from the
+
+  % Not sure why the wrapping is borked here
+  documentation without external libraries
+\item Reverse-engineered video and sound processors
+\item Developed a deep understanding of the internal operations of a computer
 \end{itemize}
-\textit{\textbf{Tools:} PowerShell, Splunk}
+\textit{\textbf{Tools:} WebAssembly, TypeScript, JavaScript, Parcel Bundler}
+
+\divider
+  
+\project{Gatekeeper Access Control System}{https://github.com/mstrodl/gatekeeper-door}
+\begin{itemize}
+\item Gatekeeper is a door lock system to control access to Computer Science House special rooms
+\item Gatekeeper uses NFC (DESFire) tags to authenticate users
+\item Wrote server which pulled data from LDAP and communicated with doors over MQTT
+\end{itemize}
+\textit{\textbf{Tools:} NodeJS, Rust, Embedded Systems, MQTT, Express, MongoDB}
 
 \divider
 
-\cvevent{Microsoft}{Software Engineering Intern - One Customer Voice Team}{June 2019 -- August 2019}{Redmond, WA}
+\project{Elcord}{https://github.com/mstrodl/elcord}
 \begin{itemize}
-\item Improved item grouping for the internal feedback aggregation tool
-\item Exposed all previously hidden top level fields and automatically detected field type via ElasticSearch mappings, greatly increasing both the granularity and flexibility for users
-\item Implemented frontend, backend, and tests with 100\% backend code coverage
+\item Emacs minor mode to display the current file in a Discord status
+\item Reverse engineered Discord's RPC protocol
+\item Requires no native dependencies
+\item Nearly 6000 downloads on MELPA
 \end{itemize}
-\textit{\textbf{Tools:} C\#, ASP.NET, Azure Service Fabric, ElasticSearch, AngularJS}
+\textit{\textbf{Tools:} Emacs Lisp}
 
-\cvsubevent{Software Engineering Intern - Office Security Penetration Testing Team}{June 2018 -- August 2018}{Redmond, WA}
+\divider
+
+\project{Webii}{https://github.com/mstrodl/webii}
 \begin{itemize}
-\item Developed a PowerShell script to create a Windows VM, automatically install Office, gather debugging symbols for Office, and send these to a Microsoft \\ Security Risk Detection server to install and start a fuzzing run
-\item Implemented a server to collect, deduplicate, and report new bugs
-\item Worked closely with the Microsoft Security Risk Detection team to help improve the job deployment process while the tool was in internal beta
+\item A system for playing Wii games in a social setting using any web browser as a remote
+\item Developed a NodeJS backend which communicated with the Dolphin Wii emulator using a largely undocumented internal format which had to be reverse-engineered
+\item Wrote a React frontend to allow users to connect and play with their device with full motion support
 \end{itemize}
-\textit{\textbf{Tools:} PowerShell, Microsoft Security Risk Detection, Azure, ASP.NET}
+\textit{\textbf{Tools:} React, NodeJS, WebSockets, Parcel}
+
+% \divider
 
 \smallskip 
 
-\cvsection{Projects}
+\cvsection{Experience}
 
-%\project{GenericBot}{https://github.com/galenguyer/GenericBot}
-%\begin{itemize}
-%\item Built a Discord bot to provide moderation tools and fun commands to over 50 servers totaling over 16,000 users
-%\item Used C\# to connect to Discord's API and store all user data in an encrypted, self-hosted MongoDB instance
-%\item Exposed user-stored quotes via a webpage ASP.NET Razor Pages for server-side rendering and JavaScript for fast, responsive search
-%\end{itemize}
-%\textit{\textbf{Tools:} C\#, MongoDB, ASP.NET, Razor Pages, HTML/CSS/JS, Azure Build Pipelines}
-
-%\divider
-
-%\project{RIT COVID-19 Dashboard}{https://github.com/galenguyer/rit-covid-dashboard}
-\noghproject{RIT COVID-19 Dashboard}{https://ritcoviddashboard.com}
+\cvevent{RIT Computer Science Department}{Student Lab Instructor}{August 2021 -- Present}{Rochester, NY}
 \begin{itemize}
-\item Wrote a Python scraper to check the official dashboard on an interval and update a SQLite database with the numbers from the official dashboard, then expose the saved data with a JSON API
-\item Used the data from the scraper in a React app that provides all the information from the official dashboard as well as changes over a user-selected time period and graphs of all historical data
-\item Used by roughly 10\% of the student body within 24 hours of launch
+  \item Helped students with coursework and programming questions
+  \item Provided mentoring to students who needed it
+  \item Wrote scripts to automate grading of submissions
 \end{itemize}
-\textit{\textbf{Tools:} Python, SQLite, Flask, React, Docker}
-
-%\project{PhotoSink}{https://github.com/galenguyer/PhotoSink}
-%\begin{itemize}
-%\item Re-wrote the lightweight photo gallery PhotoFloat, using modern technologies
-%\item Used a python3 backend to construct the directory indexes and resize images into thumbnails for faster page loads
-%\item Built a React app that requests the indexes and displays the gallery with thumbnails and folder names
-%\item Used the url fragment for single page navigation so the full page doesn't need to be reloaded on navigation
-%\end{itemize}
-%\textit{\textbf{Tools:} Python, React, NGINX}
-
-\divider
-
-\noghproject{Global Content Delivery Network}{https://galenguyer.com}
-\begin{itemize}
-\item Consists of Azure Virtual Machines distributed around the globe to provide the least latency based on the user's geographical location
-\item Deploys with Terraform for easily reproducible infrastructure
-\item Uses Ansible to distribute static files, configuration files, and SSL certificates from a central server to all edge servers
-\end{itemize}
-\textit{\textbf{Tools:} Azure Virtual Machines, Azure Traffic Managers, Bash, Nginx}
+\textit{\textbf{Tools:} Python, Java, Bash Scripting}
 
 \clearpage
 

@@ -1,7 +1,7 @@
 default: all clean
 
 all: resume.tex sidebar.tex
-	pdflatex -jobname Resume resume.tex
+	pdflatex -jobname Mary-Strodl-Resume resume.tex
 
 clean:
 	rm -f *.aux
@@ -14,12 +14,13 @@ clean:
 	rm -f *.out
 	rm -f *.run.xml
 	rm -f *.synctex.gz
+	rm -f mary-strodl-resume.pdf
 	rm -f resume.pdf
 
 purge: clean
-	rm -rf Resume.pdf
+	rm -rf Mary-Strodl-Resume.pdf
 	git clean -fX
 
 publish:
-	latexmk resume.tex -pdf -jobname=Galen_Guyer_Resume-`date +"%F_%H-%M-%S"`
+	latexmk resume.tex -pdf -jobname=Mary_Strodl_Resume-`date +"%F_%H-%M-%S"`
 	make clean
