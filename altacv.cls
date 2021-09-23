@@ -44,7 +44,7 @@
 \colorlet{heading}{black}
 \colorlet{emphasis}{black}
 \colorlet{body}{black!80!white}
-\definecolor{AcePurple}{HTML}{800080}
+\definecolor{AcePurple}{HTML}{9429a0}
 \colorlet{ace}{AcePurple}%Sepia}
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
@@ -69,7 +69,7 @@
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
   {\end{adjustwidth}}
 
-\newcommand{\emailsymbol}{\faEnvelope}
+\newcommand{\emailsymbol}{\faAt}
 \newcommand{\phonesymbol}{\faPhone}
 \newcommand{\homepagesymbol}{\faChain}
 \newcommand{\locationsymbol}{\faMapMarker}
@@ -86,7 +86,7 @@
 \newcommand{\photo}[2]{\def\@photo{#2}\def\@photodiameter{#1}}
 \newcommand{\email}[1]{\printinfo{\emailsymbol}{\href{mailto:#1}{#1}}}
 \newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{#1}}
-\newcommand{\phone}[1]{\printinfo{\phonesymbol}{\href{tel:+14258983145}{#1}}}
+\newcommand{\phone}[1]{\printinfo{\phonesymbol}{\href{tel:+15166545123}{#1}}}
 \newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\href{https://#1}{#1}}}
 \newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{\href{https://linkedin.com/#1}{#1}}}
@@ -100,9 +100,9 @@
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
-    {\fontsize{36}{40}\bfseries\color{ace}\MakeUppercase{\@name}\par}
+    {\fontsize{36}{40}\bfseries\color{emphasis}\MakeUppercase{\@name}\par}
     \vspace{4.7px}
-    {\large\bfseries\color{accent}\@tagline\par}
+    {\large\bfseries\color{body}\@tagline\par}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
     \begin{minipage}{\@photodiameter}
