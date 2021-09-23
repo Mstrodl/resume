@@ -1,0 +1,18 @@
+\documentclass[10pt,letter]{article}
+
+\begin{document}
+
+\noindent
+Hi, I'm Mary Strodl, a Computer Science student and CSHer at RIT.
+
+\bigskip
+
+\noindent
+It looks like you do a lot of work with embedded software which is super cool and I'd love to get more into that. Through Computer Science House (an organization at RIT), I've actually been working on some embedded software projects. CSH has some special rooms which can only be accessed by members using a special keyfob. Unfortunately, it was made nearly 10 years ago, the keyfobs are difficult to source, and the software tends to crash frequently unless it's restarted every half-hour. I've been working on a rewrite of this project to solve some of these issues over the past several months which uses DESFire NFC tags instead of the iButtons of the old project. This project uses custom hardware that lives inside door fixtures which runs a Rust client which talks to a Node.JS server which implements a pub/sub interface over MQTT which the doors talk to as well as an HTTP API for less mission-critical consumers. Unfortunately, I'm not as knowledgeable about the hardware side of things; the hardware itself was made by an alumni, but I wrote nearly the entire software stack. This project also includes a library to make it easy for other CSH members to build projects which can read these tags to authenticate users to purchase drinks from our internet-connected soda machine, play games on our custom arcade machine, and play a theme song when they enter the room. All of these implementations were written by me so far to replace existing projects that used iButtons, but other members should have no issue with using my library in the future.
+
+\bigskip
+
+\noindent
+Usually my focus is more on JavaScript (like the backend I wrote for this project, or React frontends) or C++, but this foray into embedded software was a lot of fun and I'd love to learn more about industry practices with embedded software. I would love to do an internship this summer either in embedded software, web frontend, or backend development.
+
+\end{document}

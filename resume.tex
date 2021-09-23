@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.2, 1 February 2017) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,letter]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%%
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=7.25cm,marginparsep=0.75cm,top=0.5cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[none]{hyphenat}
+\usepackage[document]{ragged2e}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{AccentGreen}{HTML}{339966}
+\definecolor{AcePurple}{HTML}{9429a0}
+\definecolor{DarkerPurple}{HTML}{6e1f77}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{SomeBlue}{HTML}{4286f4}
+\colorlet{heading}{AcePurple}%Sepia}
+\colorlet{accent}{DarkerPurple}%AccentGreen}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Mary Strodl}
+\tagline{Computer Scientist Seeking a Summer 2022 Co-op}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \github{github.com/mstrodl}\\\smallskip
+  \email{mary@mstrodl.com}\\\smallskip
+  \phone{(516) 654-5123}\\\smallskip
+  \homepage{mstrodl.com}\\\smallskip
+  \linkedin{in/mstrodl}\\\smallskip
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\marginpar{\makesidebarheader\input{sidebar.tex}}
+    \vspace*{-1\baselineskip}
+\makecvheader
+\end{fullwidth}
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection{Projects}
+
+\project{ColecoVision Emulator}{https://github.com/mstrodl/pen}
+\begin{itemize}
+\item Wrote a Z80 (ColecoVision CPU) emulator in TypeScript, from the
+
+  % Not sure why the wrapping is borked here
+  documentation without external libraries
+\item Reverse-engineered video and sound processors
+\item Developed a deep understanding of the internal operations of a computer
+\end{itemize}
+\textit{\textbf{Tools:} WebAssembly, TypeScript, JavaScript, Parcel Bundler}
+
+\divider
+  
+\project{Gatekeeper Access Control System}{https://github.com/mstrodl/gatekeeper-door}
+\begin{itemize}
+\item Gatekeeper is a door lock system to control access to Computer Science House special rooms
+\item Gatekeeper uses NFC (DESFire) tags to authenticate users
+\item Wrote server which pulled data from LDAP and communicated with doors over MQTT
+\end{itemize}
+\textit{\textbf{Tools:} NodeJS, Rust, Embedded Systems, MQTT, Express, MongoDB}
+
+\divider
+
+\project{Elcord}{https://github.com/mstrodl/elcord}
+\begin{itemize}
+\item Emacs minor mode to display the current file in a Discord status
+\item Reverse engineered Discord's RPC protocol
+\item Requires no native dependencies
+\item Nearly 6000 downloads on MELPA
+\end{itemize}
+\textit{\textbf{Tools:} Emacs Lisp}
+
+\divider
+
+\project{Webii}{https://github.com/mstrodl/webii}
+\begin{itemize}
+\item A system for playing Wii games in a social setting using any web browser as a remote
+\item Developed a NodeJS backend which communicated with the Dolphin Wii emulator using a largely undocumented internal format which had to be reverse-engineered
+\item Wrote a React frontend to allow users to connect and play with their device with full motion support
+\end{itemize}
+\textit{\textbf{Tools:} React, NodeJS, WebSockets, Parcel}
+
+% \divider
+
+\smallskip 
+
+\cvsection{Experience}
+
+\cvevent{RIT Computer Science Department}{Student Lab Instructor}{August 2021 -- Present}{Rochester, NY}
+\begin{itemize}
+  \item Helped students with coursework and programming questions
+  \item Provided mentoring to students who needed it
+  \item Wrote scripts to automate grading of submissions
+\end{itemize}
+\textit{\textbf{Tools:} Python, Java, Bash Scripting}
+
+\clearpage
+
+\end{document}
