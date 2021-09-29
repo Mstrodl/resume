@@ -63,7 +63,7 @@
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
-\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
+\newcommand{\divider}{\textcolor{body!50}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
 
 \newenvironment{fullwidth}{%
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
@@ -165,13 +165,13 @@
 }
 
 \newcommand{\cvtag}[1]{%
-    \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=.5ex,inner ysep =0.425ex,text height=1.5ex,text depth=.25ex]{\small{#1}};
+    \tikz[baseline]\node[anchor=base,draw=body!50,rounded corners,inner xsep=.5ex,inner ysep =0.425ex,text height=1.5ex,text depth=.25ex]{\small{#1}};
 }
 
 \newcommand{\cvskill}[2]{%
 \textcolor{emphasis}{\textbf{#1}}\hfill
 \foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+  \space{\ifnumgreater{\x}{#2}{\color{body!50}}{\color{accent}}\ratingmarker}}\par%
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
