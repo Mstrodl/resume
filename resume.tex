@@ -69,15 +69,15 @@
 
 \begin{document}
 \name{Mary Strodl}
-\tagline{Computer Scientist Seeking a Summer 2023 Co-op}
+\tagline{Computer Scientist Seeking a Summer 2024 Co-op}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \github{github.com/mstrodl}\\\smallskip
   \email{mary@mstrodl.com}\\\smallskip
   \phone{(516) 654-5123}\\\smallskip
   \homepage{mstrodl.com}\\\smallskip
   \linkedin{in/mstrodl}\\\smallskip
+  \github{mstrodl}\\\smallskip
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -94,12 +94,11 @@
 %% \cvsection title in the "main" bar.
 
 %% Make the columns line up
-\bigskip
-\smallskip
+\vspace{14pt}
 
 \cvsection{Projects}
 
-\project{ColecoVision Emulator}{https://github.com/mstrodl/pen}
+\project{ColecoVision Emulator}{mstrodl/pen}
 \begin{itemize}
 \item Wrote a Z80 (ColecoVision CPU) emulator in TypeScript, from the
 
@@ -112,7 +111,7 @@
 
 \divider
   
-\project{Gatekeeper Access Control System}{https://github.com/mstrodl/gatekeeper-door}
+\project{Gatekeeper Access Control System}{mstrodl/gatekeeper-door}
 \begin{itemize}
 \item Gatekeeper is a door lock system to control access to Computer Science House special rooms
 \item Gatekeeper uses NFC (DESFire) tags to authenticate users
@@ -122,12 +121,11 @@
 
 \divider
 
-\project{Elcord}{https://github.com/mstrodl/elcord}
+\project{Elcord}{mstrodl/elcord}
 \begin{itemize}
 \item Emacs minor mode to display the current file in a Discord status
 \item Reverse engineered Discord's RPC protocol
-\item Requires no native dependencies
-\item Nearly 6000 downloads on MELPA
+\item Over 7,500 downloads on MELPA
 \end{itemize}
 \textit{\textbf{Tools:} Emacs Lisp}
 
@@ -137,18 +135,20 @@
 
 \cvevent{Bryx}{Software Engineer (Part-time)}{August 2022 -- Present}{Rochester, NY}
 \begin{itemize}
-  \item Maintained a large React codebase
-  \item Assisted with embedded software development
+  \item Maintaining a large React codebase with a Kotlin and Python backend
+  \item Assisting with embedded software development
 \end{itemize}
+\textit{\textbf{Tools:} React, Typescript, Python, Rust, Kotlin, C}
 
 \divider
 
 \cvevent{D3 Engineering}{Engineering Intern}{May 2022 -- August 2022}{Rochester, NY}
 \begin{itemize}
   \item Developed camera drivers for Texas Instruments' RTOS Jacinto platform
-  \item Maintained the Linux kernel for TDA4
-  \item Improved custom build tooling
+  \item Maintained the Linux kernel and device tree for the Texas Instruments TDA4
+  \item Improved custom build tooling, leading to a 10 minute reduction in build times
 \end{itemize}
+\textit{\textbf{Tools:} Linux Kernel, C, RTOS, I2C}
 
 \divider
 

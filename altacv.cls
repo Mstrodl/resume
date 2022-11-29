@@ -63,7 +63,7 @@
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
-\newcommand{\divider}{\textcolor{body!50}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
+\newcommand{\divider}{\vspace{-0.1em}\textcolor{body!50}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\vspace{-0.05em}}
 
 \newenvironment{fullwidth}{%
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
@@ -148,7 +148,6 @@
   \smallskip
 }
 \newcommand{\cvsubevent}[3]{%
-  \smallskip
   \textbf{\color{accent}#1}\par
   \smallskip
   \ifstrequal{#2}{}{}{\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#2}%
@@ -265,5 +264,5 @@
 }
 
 
-\newcommand{\project}[2]{\cvevent{#1}{\href{#2}{\githubsymbol\hspace{1ex}#2}}{}{}}
+\newcommand{\project}[2]{\cvevent{#1}{\href{#2}{\githubsymbol\hspace{1ex}#2}}{}{}\vspace{-0.125em}}
 \newcommand{\noghproject}[2]{\cvevent{#1}{\href{#2}{\homepagesymbol\hspace{1ex}#2}}{}{}}
