@@ -76,7 +76,6 @@
   \email{mary@mstrodl.com}\\\smallskip
   \phone{(516) 654-5123}\\\smallskip
   \homepage{mstrodl.com}\\\smallskip
-  \linkedin{in/mstrodl}\\\smallskip
   \github{mstrodl}\\\smallskip
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
@@ -94,14 +93,14 @@
 %% \cvsection title in the "main" bar.
 
 %% Make the columns line up
-\vspace{19.5pt}
+\vspace{6pt}
 
 \cvsection{Experience}
 
 \cvevent{Bryx}{Software Engineer}{August 2022 -- Present}{Rochester, NY}
 \begin{itemize}
   \item Maintaining a large React codebase with a Kotlin and Python backend
-  \item Assisting with embedded software development
+  \item Creating software to manage 5G modems in embedded Linux systems
   \item Building a new software update solution based on OSTree
 \end{itemize}
 \textit{\textbf{Tools:} React, Typescript, Python, Rust, Kotlin, C, Swift}
@@ -112,7 +111,7 @@
 \begin{itemize}
   \item Developed camera drivers for Texas Instruments' RTOS Jacinto platform
   \item Maintained the Linux kernel and device tree for the Texas Instruments TDA4
-  \item Improved custom build tooling, leading to a 10 minute reduction in build times
+  \item Improved custom build tooling, leading to a 50\% decrease in build times
 \end{itemize}
 \textit{\textbf{Tools:} Linux Kernel, C, RTOS, I2C}
 
@@ -120,9 +119,9 @@
 
 \cvevent{Geisel Software}{Software Engineer Intern}{November 2021 -- May 2022}{Worcester, MA}
 \begin{itemize}
-  \item Worked on a large CodeIgniter and Nuxt Vue project
-  \item Migrated internal projects from Vagrant to Docker
-  \item Moved codebase to CodeIgniter Forge migrations
+  \item Collaborated with a team on a large PHP API and Vue web application
+  \item Migrated internal projects from Vagrant to Docker containers
+  \item Upgraded codebase to use database migrations
 \end{itemize}
 \textit{\textbf{Tools:} Nuxt, Vue, PHP, CodeIgniter 4}
 
@@ -132,36 +131,33 @@
 
 \smallskip
 
-\project{ColecoVision Emulator}{mstrodl/pen}
+\project{Pixel Shader Programming Language}{mstrodl/anarchy}
 \begin{itemize}
-\item Wrote a Z80 (ColecoVision CPU) emulator in TypeScript, from the
-
-  % Not sure why the wrapping is borked here
-  documentation without external libraries
-\item Reverse-engineered video and sound processors
-\item Developed a deep understanding of the internal operations of a computer
+\item Designed a pixel shader programming language in Rust.
+\item Built an editor with live preview, inline errors, and syntax highlighting using React and WebAssembly
+\item Optimized interpreter to reach \char `~ 4ms per frame
 \end{itemize}
-\textit{\textbf{Tools:} WebAssembly, TypeScript, JavaScript, Parcel Bundler}
+\textit{\textbf{Tools:} WebAssembly, TypeScript, Rust}
 
 \divider
   
-\project{Gatekeeper Access Control System}{mstrodl/gatekeeper-door}
+\project{Gatekeeper Access Control System}{mstrodl/gatekeeper-core}
 \begin{itemize}
-\item Gatekeeper is a door lock system to control access to Computer Science House special rooms
-\item Gatekeeper uses NFC (DESFire) tags to authenticate users
-\item Wrote both server and door code which pulled data from LDAP and communicated with doors over MQTT
+\item Architected a door lock system to control access to Computer Science House special rooms using NFC (DESFire) tags to authenticate users
+\item Leveraged Rust to ensure memory safety in a high-security environment
+\item Wrote server software to pull data from LDAP and communicate with doors over MQTT
 \end{itemize}
-\textit{\textbf{Tools:} NodeJS, Rust, Embedded Systems, MQTT, Express, MongoDB, Kubernetes}
+\textit{\textbf{Tools:} NodeJS, Rust, Embedded Systems, KiCad, MQTT, Express, MongoDB, Kubernetes}
 
 \divider
 
-\project{Elcord}{mstrodl/elcord}
+\project{Flask}{computersciencehouse/devin}
 \begin{itemize}
-\item Emacs minor mode to display the current file in a Discord status
-\item Reverse engineered Discord's RPC protocol
-\item Over 7,500 downloads on MELPA
+\item Published an Android app to buy drinks from CSH vending machines on the Google Play Store
+\item Developed NFC support to allow unlocking doors using an Android phone
+\item Created a robust OAuth2 client to authenticate and bill users
 \end{itemize}
-\textit{\textbf{Tools:} Emacs Lisp}
+\textit{\textbf{Tools:} Kotlin, Jetpack Compose, NFC}
 
 \clearpage
 

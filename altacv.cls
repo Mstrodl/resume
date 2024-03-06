@@ -164,7 +164,7 @@
 }
 
 \newcommand{\cvtag}[1]{%
-    \tikz[baseline]\node[anchor=base,draw=body!50,rounded corners,inner xsep=.5ex,inner ysep =0.425ex,text height=1.5ex,text depth=.25ex]{\small{#1}};
+    \tikz[baseline]\node[anchor=base,draw=body!50,rounded corners,inner xsep=.5ex,inner ysep =0.425ex,outer xsep=0.1ex,text height=1.75ex,text depth=.25ex]{\small{#1}};
 }
 
 \newcommand{\cvskill}[2]{%
